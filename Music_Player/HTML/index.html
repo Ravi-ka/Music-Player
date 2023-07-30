@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Images/Logo.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/Index.css">
+    <title>Music Player</title>
+</head>
+<body>
+    
+    <div class="container">
+    <!-- Header nav -->
+    <section id="header-nav">
+        <nav class="navbar navbar-expand-md bg-transparent">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <img class="header-logo" src="/Images/Main_image.jpg" width="60" height="60">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Ninja<br><span style="font-weight: bold;">Studio</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light ms-5 follow-btn" href="#">Favourites</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light ms-5 follow-btn" href="#">My Album</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light ms-5 follow-btn" href="#">Mix It<sup>+</sup></a>
+                  </li>
+                </ul>
+                <!-- search button -->
+                <form class="form">
+                    <button>
+                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <input class="input" placeholder="Search" required="" type="text">
+                    <button class="reset" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </form>
+
+                <img class="notification-icon" src="/Images/notification.png" width="25" height="25">
+                <img class="profile-logo" src="/Images/296577540_591726475920700_8141194666291610190_n.jpg" width="50" height="50">
+
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <!-- Main Carousel  -->
+    
+    <section id="main-carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="/Images/Main_image.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">ColdPlay</h5>
+                          <p class="card-text"><small class="">British Brand</small></p>
+                          <p class="card-text">Passionate, heart-rending alternative pop group whose sweet melodies and swooning lyrics made them one of the biggest bands of the new millennium.Passionate, heart-rending alternative pop group whose sweet melodies and swooning lyrics made them one of the biggest bands of the new millennium.</p>
+
+                          <div class="main-btns">
+                            <button class="play-btn box-glow">Play All</button>
+                          <p class="follow-btn">Follow</p>
+                          </div>
+                          <p class="album-stats">123 Tracks | 170 Albums</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- <div class="carousel-item">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="/Images/Custom_logo_1.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">ColdPlay</h5>
+                        <p class="card-text"><small class="">British Brand</small></p>
+                        <p class="card-text">Passionate, heart-rending alternative pop group whose sweet melodies and swooning lyrics made them one of the biggest bands of the new millennium.Passionate, heart-rending alternative pop group whose sweet melodies and swooning lyrics made them one of the biggest bands of the new millennium.</p>
+
+                        <div class="main-btns">
+                          <button class="play-btn">Play All</button>
+                        <p class="follow-btn">Follow</p>
+                        </div>
+                        <p class="album-stats">247 Tracks | 126 Albums</p>
+                      </div>
+                    </div>
+                  </div>
+              </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <!-- Music sections -->
+    <main>
+        <section id="music-list-section">
+        <div class="container">
+            <div class="music-list">
+                <p class="music-count">01</p>
+                <img class="list-img" src="/Images/Custom_logo_1.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Miracle of Life</p>
+                    <p class="list-sub-title">Sun Down</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">02</p>
+                <img class="list-img" src="/Images/Custom_logo_2.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Wolves of Wall Street</p>
+                    <p class="list-sub-title">John Dree</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">03</p>
+                <img class="list-img" src="/Images/Custom_logo_3.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Kings of King</p>
+                    <p class="list-sub-title">Crown</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">04</p>
+                <img class="list-img" src="/Images/Custom_logo_4.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Fog DeGround</p>
+                    <p class="list-sub-title">Mr. D</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">05</p>
+                <img class="list-img" src="/Images/Custom_logo_1.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Evo Fox</p>
+                    <p class="list-sub-title">Fox</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">06</p>
+                <img class="list-img" src="/Images/Custom_logo_2.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Dangerous</p>
+                    <p class="list-sub-title">Drunk</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">07</p>
+                <img class="list-img" src="/Images/Custom_logo_3.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Quantum</p>
+                    <p class="list-sub-title">Eno</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">08</p>
+                <img class="list-img" src="/Images/Custom_logo_4.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Try It Hard</p>
+                    <p class="list-sub-title">Presence</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">09</p>
+                <img class="list-img" src="/Images/Custom_logo_1.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Life Lessons</p>
+                    <p class="list-sub-title">Glass</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">10</p>
+                <img class="list-img" src="/Images/Custom_logo_2.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">You Can Do It</p>
+                    <p class="list-sub-title">Forever</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">11</p>
+                <img class="list-img" src="/Images/Custom_logo_3.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Un-Plugged Version</p>
+                    <p class="list-sub-title">Flume</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            <div class="music-list">
+                <p class="music-count">12</p>
+                <img class="list-img" src="/Images/Custom_logo_4.jpg">
+                <div class="list-music-details">
+                    <p class="list-title">Fire on Water</p>
+                    <p class="list-sub-title">Cat</p>
+                </div>
+                <div class="ation-icons">
+                    <img class="fav-icon" src="/Images/heart.png">
+                    <img class="add-icon" src="/Images/add.png">
+                </div>
+            </div>
+
+            
+
+        
+
+           
+        </div>
+    </section>
+
+</main>
+    <!-- Similar Artist section -->
+    <aside id="similar-section">
+        <div class="container">
+                <div class="aside-main-title">
+                    <p class="aside-heading">Similar Artists</p>
+                    <p class="aside-sub-heading">View All</p>
+              </div>
+
+              <div class="aside-content">
+                <img class="aside-img" src="/Images/Custom_logo_1.jpg">
+                <div class="aside-title-content">
+                    <p class="aside-title">Coconut From Ka</p>
+                    <p class="aside-sub-title">Pop Brand</p>
+                </div>
+                <img class="aside-more" src="/Images/more.png">
+                <p class="duration">2.06</p>
+              </div>
+
+              <div class="aside-content">
+                <img class="aside-img" src="/Images/Custom_logo_2.jpg">
+                <div class="aside-title-content">
+                    <p class="aside-title">Artist By Bob</p>
+                    <p class="aside-sub-title"">Rock Brand</p>
+                </div>
+                <img class="aside-more" src="/Images/more.png">
+                <p class="duration">5.64</p>
+              </div>
+
+              <div class="aside-content">
+                <img class="aside-img" src="/Images/Custom_logo_3.jpg">
+                <div class="aside-title-content">
+                    <p class="aside-title">Kings of Bar</p>
+                    <p class="aside-sub-title"">Jazz</p>
+                </div>
+                <img class="aside-more" src="/Images/more.png">
+                <p class="duration">4.26</p>
+              </div>
+
+              <div class="aside-content">
+                <img class="aside-img" src="/Images/Custom_logo_4.jpg">
+                <div class="aside-title-content">
+                    <p class="aside-title">Fog Down</p>
+                    <p class="aside-sub-title""> Pop Brand</p>
+                </div>
+                <img class="aside-more" src="/Images/more.png">
+                <p class="duration">3.34</p>
+              </div>
+
+              <!-- Recently Played -->
+              <div class="aside-main-title">
+                <p class="aside-heading-1">Recently Played</p>
+                <p class="aside-sub-heading-1">View All</p>
+            </div>
+
+            <div class="recently-played">
+                <p class="rec-count">01</p>
+                <img class="rec-img" src="/Images/Custom_logo_1.jpg">
+                <div class="rec-content">
+                    <p class="rec-title">Mirage</p>
+                    <p class="rec-sub-title">Elise</p>
+                </div>
+                <div class="rec-icon">
+                    <img class="rec-fav-icon" src="/Images/heart.png">
+                </div>
+            </div>
+
+            <div class="recently-played">
+                <p class="rec-count">02</p>
+                <img class="rec-img" src="/Images/Custom_logo_1.jpg">
+                <div class="rec-content">
+                    <p class="rec-title">Common</p>
+                    <p class="rec-sub-title">BoB</p>
+                </div>
+                <div class="rec-icon">
+                    <img class="rec-fav-icon" src="/Images/heart.png">
+                </div>
+            </div>
+
+            <div class="recently-played">
+                <p class="rec-count">03</p>
+                <img class="rec-img" src="/Images/Custom_logo_1.jpg">
+                <div class="rec-content">
+                    <p class="rec-title">Beautiful</p>
+                    <p class="rec-sub-title">Barbie</p>
+                </div>
+                <div class="rec-icon">
+                    <img class="rec-fav-icon" src="/Images/heart.png">
+                </div>
+            </div>
+
+            <div class="recently-played">
+                <p class="rec-count">04</p>
+                <img class="rec-img" src="/Images/Custom_logo_1.jpg">
+                <div class="rec-content">
+                    <p class="rec-title">Young</p>
+                    <p class="rec-sub-title">Dawn</p>
+                </div>
+                <div class="rec-icon">
+                    <img class="rec-fav-icon" src="/Images/heart.png">
+                </div>
+            </div>
+
+            <div class="recently-played">
+                <p class="rec-count">05</p>
+                <img class="rec-img" src="/Images/Custom_logo_1.jpg">
+                <div class="rec-content">
+                    <p class="rec-title">Sun Rise</p>
+                    <p class="rec-sub-title">East</p>
+                </div>
+                <div class="rec-icon">
+                    <img class="rec-fav-icon" src="/Images/heart.png">
+                </div>
+            </div>
+
+
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <!-- <section id="footer-music">
+        <div class="main-div">
+            <div class="footer-content-1">
+                <img class="footer-img" src="/Images/Logo.jpg">
+                <div class="footer-music-title">
+                    <p class="footer-title1">Imagination</p>
+                    <p class="footer-title2">Hip Hop</p>
+                </div>
+                <div class="logo-class">
+                    <img class="footer-1-logo" src="/Images/heart.png">
+                    <img class="footer-1-logo" src="/Images/forbidden.png">
+                </div>
+            </div>
+
+            <div class="footer-content-2">
+                <div class="music-controls">
+                    <a href=""><img class="control-buttons" src="/Images/shuffle.png"></a>
+                <a href=""><img class="control-buttons" src="/Images/music-player.png"></a>
+                <a href=""><img class="control-buttons" src="/Images/play-button.png"></a>
+                <a href=""><img class="control-buttons" src="/Images/music-player (1).png"></a>
+                <a href=""><img class="control-buttons" src="/Images/repeat-button.png"></a>
+                </div>
+            </div>
+
+            <div class="footer-content-3">
+                <div class="music-controls-aside">
+                    <a href=""><img class="control-buttons-aside" src="/Images/music-player (2).png"></a>
+                    <a href=""><img class="control-buttons-aside" src="/Images/equalizer.png"></a>
+                    <a href=""><img class="control-buttons-aside" src="/Images/volume-up-interface-symbol.png"></a>
+                    <a href=""><img class="control-buttons-aside" src="/Images/sound-waves.png"></a>
+                    <a href=""><img class="control-buttons-aside" src="/Images/expand.png"></a>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+<div class="end-text text-center text-light m-3">
+    <p class="end-para">Made With Love &#10084;</p>
+</div>
+</div>
+    <!-- Linking Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  
+
+</body>
+</html>
